@@ -15,9 +15,9 @@ boyTab.addEventListener("click", () => {
 });
 
 generateButton.addEventListener("click", () => {
-    const tab = girlTab.classList.contains("active") ? "waifu" : "shin";
+    const tab = girlTab.classList.contains("active") ? "female" : "male";
     
-    fetch(`https://shiro.gg/api/images/${tab}`)
+    fetch(`https://api.thiswaifudoesnotexist.net/example/${tab}`)
         .then(response => response.json())
         .then(data => {
             const imageUrl = data.url;
